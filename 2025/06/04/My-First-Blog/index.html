@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.30.0" theme-name="Stellar" theme-version="1.30.0">
-  <meta name="robots" content="noindex,follow">
+  
   <meta name="generator" content="Hexo 6.3.0">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   
@@ -17,14 +17,18 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   
-  <title>归档 - 行香子-述怀</title>
+  <title>计算机网络基础 - 行香子-述怀</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="https://github.com/chenxi2333/archives/index.html">
+    <meta name="description" content="计算机网络是一个分层的结构，下层的协议和上层协议之间有严格的抽象解耦，下层的传输不会影响到上层。每一层只需要考虑这一层的协议实现就可以。这就是OSI网络分层结构。 从下而上网络有物理层、数据链路层、网络层、传输层。本文主要解析和理解数据链路层、网络层和传输层这三层的内容的。 参考文章： TCP协议详解 (史上最全)-CSDN博客  数据链路层 ？ 链路层是什么 主要负责的是网络点对点的传输。 具">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络基础">
+<meta property="og:url" content="https://github.com/chenxi2333/2025/06/04/My-First-Blog/index.html">
 <meta property="og:site_name" content="行香子-述怀">
+<meta property="og:description" content="计算机网络是一个分层的结构，下层的协议和上层协议之间有严格的抽象解耦，下层的传输不会影响到上层。每一层只需要考虑这一层的协议实现就可以。这就是OSI网络分层结构。 从下而上网络有物理层、数据链路层、网络层、传输层。本文主要解析和理解数据链路层、网络层和传输层这三层的内容的。 参考文章： TCP协议详解 (史上最全)-CSDN博客  数据链路层 ？ 链路层是什么 主要负责的是网络点对点的传输。 具">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-06-04T03:44:33.000Z">
+<meta property="article:modified_time" content="2025-06-04T03:45:21.254Z">
 <meta property="article:author" content="CX2333">
 <meta name="twitter:card" content="summary">
   
@@ -46,7 +50,7 @@
 </head>
 <body>
 
-<div class="l_body index tech" id="start" layout="undefined" ><aside class="l_left"><div class="leftbar-container">
+<div class="l_body content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><div class="icon"><img no-lazy class="icon" src="/assets/fish.svg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></div><a class="title" href="/chenxi2333/"><div class="main" ff="title">Cx330</div><div class="sub normal cap">Blog Demo</div><div class="sub hover cap" style="opacity:0"> v0.0.1</div></a></div></header>
@@ -58,21 +62,187 @@
 <nav class="menu dis-select"><a class="nav-item active" title="博客" href="/chenxi2333/" style="color:#1BCDFC"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.879 2.879C5 3.757 5 5.172 5 8v8c0 2.828 0 4.243.879 5.121C6.757 22 8.172 22 11 22h2c2.828 0 4.243 0 5.121-.879C19 20.243 19 18.828 19 16V8c0-2.828 0-4.243-.879-5.121C17.243 2 15.828 2 13 2h-2c-2.828 0-4.243 0-5.121.879M8.25 17a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75M9 12.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5zM8.25 9A.75.75 0 0 1 9 8.25h6a.75.75 0 0 1 0 1.5H9A.75.75 0 0 1 8.25 9" clip-rule="evenodd"/><path fill="currentColor" d="M5.235 4.058C5 4.941 5 6.177 5 8v8c0 1.823 0 3.058.235 3.942L5 19.924c-.975-.096-1.631-.313-2.121-.803C2 18.243 2 16.828 2 14v-4c0-2.829 0-4.243.879-5.121c.49-.49 1.146-.707 2.121-.803zm13.53 15.884C19 19.058 19 17.822 19 16V8c0-1.823 0-3.059-.235-3.942l.235.018c.975.096 1.631.313 2.121.803C22 5.757 22 7.17 22 9.999v4c0 2.83 0 4.243-.879 5.122c-.49.49-1.146.707-2.121.803z" opacity=".5"/></svg></a><a class="nav-item" title="专栏" href="/chenxi2333/topic/" style="color:#3DC550"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.25 4.48v3.057c0 .111 0 .27.02.406a.936.936 0 0 0 .445.683a.96.96 0 0 0 .783.072c.13-.04.272-.108.378-.159L17 8.005l1.124.534c.106.05.248.119.378.16a.958.958 0 0 0 .783-.073a.936.936 0 0 0 .444-.683c.021-.136.021-.295.021-.406V3.031c.113-.005.224-.01.332-.013C21.154 2.98 22 3.86 22 4.933v11.21c0 1.112-.906 2.01-2.015 2.08c-.97.06-2.108.179-2.985.41c-1.082.286-1.99 1.068-3.373 1.436c-.626.167-1.324.257-1.627.323V5.174c.32-.079 1.382-.203 1.674-.371c.184-.107.377-.216.576-.323m5.478 8.338a.75.75 0 0 1-.546.91l-4 1a.75.75 0 0 1-.364-1.456l4-1a.75.75 0 0 1 .91.546" clip-rule="evenodd"/><path fill="currentColor" d="M18.25 3.151c-.62.073-1.23.18-1.75.336a8.2 8.2 0 0 0-.75.27v3.182l.75-.356l.008-.005a1.13 1.13 0 0 1 .492-.13c.047 0 .094.004.138.01c.175.029.315.1.354.12l.009.005l.749.356V3.647z"/><path fill="currentColor" d="M12 5.214c-.334-.064-1.057-.161-1.718-.339C8.938 4.515 8.05 3.765 7 3.487c-.887-.234-2.041-.352-3.018-.412C2.886 3.007 2 3.9 2 4.998v11.146c0 1.11.906 2.01 2.015 2.079c.97.06 2.108.179 2.985.41c.486.129 1.216.431 1.873.726c1.005.451 2.052.797 3.127 1.034z" opacity=".5"/><path fill="currentColor" d="M4.273 12.818a.75.75 0 0 1 .91-.545l4 1a.75.75 0 1 1-.365 1.455l-4-1a.75.75 0 0 1-.545-.91m.909-4.545a.75.75 0 1 0-.364 1.455l4 1a.75.75 0 0 0 .364-1.455z"/></svg></a><a class="nav-item" title="探索" href="/chenxi2333/explore/" style="color:#FA6400"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M20 12a8 8 0 1 1-16 0a8 8 0 0 1 16 0" opacity=".5"/><path fill="currentColor" d="M17.712 5.453c1.047-.193 2.006-.259 2.797-.152c.77.103 1.536.393 1.956 1.064c.446.714.312 1.542-.012 2.258c-.33.728-.918 1.499-1.672 2.268c-1.516 1.547-3.836 3.226-6.597 4.697c-2.763 1.472-5.495 2.484-7.694 2.92c-1.095.217-2.098.299-2.923.201c-.8-.095-1.6-.383-2.032-1.075c-.47-.752-.296-1.63.07-2.379c.375-.768 1.032-1.586 1.872-2.403L4 12.416c0 .219.083.71.168 1.146c.045.23.09.444.123.596c-.652.666-1.098 1.263-1.339 1.756c-.277.567-.208.825-.145.925c.072.116.305.305.937.38c.609.073 1.44.018 2.455-.183c2.02-.4 4.613-1.351 7.28-2.772c2.667-1.42 4.85-3.015 6.23-4.423c.694-.707 1.15-1.334 1.377-1.836c.233-.515.167-.75.107-.844c-.07-.112-.289-.294-.883-.374c-.542-.072-1.272-.041-2.163.112L16.87 5.656c.338-.101.658-.17.842-.203"/></svg></a><a class="nav-item" title="社交" href="/chenxi2333/friends/" style="color:#F44336"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.629 20.472l-.542.916c-.483.816-1.69.816-2.174 0l-.542-.916c-.42-.71-.63-1.066-.968-1.262c-.338-.197-.763-.204-1.613-.219c-1.256-.021-2.043-.098-2.703-.372a5 5 0 0 1-2.706-2.706C2 14.995 2 13.83 2 11.5v-1c0-3.273 0-4.91.737-6.112a5 5 0 0 1 1.65-1.651C5.59 2 7.228 2 10.5 2h3c3.273 0 4.91 0 6.113.737a5 5 0 0 1 1.65 1.65C22 5.59 22 7.228 22 10.5v1c0 2.33 0 3.495-.38 4.413a5 5 0 0 1-2.707 2.706c-.66.274-1.447.35-2.703.372c-.85.015-1.275.022-1.613.219c-.338.196-.548.551-.968 1.262" opacity=".5"/><path fill="currentColor" d="M10.99 14.308c-1.327-.978-3.49-2.84-3.49-4.593c0-2.677 2.475-3.677 4.5-1.609c2.025-2.068 4.5-1.068 4.5 1.609c0 1.752-2.163 3.615-3.49 4.593c-.454.335-.681.502-1.01.502c-.329 0-.556-.167-1.01-.502"/></svg></a></nav>
 </div>
 <div class="widgets">
+
+
 <widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/chenxi2333/2025/06/04/My-First-Blog/"><span class="title">计算机网络基础</span></a><a class="item title" href="/chenxi2333/2023/05/29/hello-world/"><span class="title">Hello World</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><div class="icon"><img no-lazy class="icon" src="/assets/fish.svg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></div><a class="title" href="/chenxi2333/"><div class="main" ff="title">Cx330</div><div class="sub normal cap">Blog Demo</div><div class="sub hover cap" style="opacity:0"> v0.0.1</div></a></div></header>
-
- 
 
 
-<div class="navbar top"><nav class="post"><a href="/chenxi2333/">近期发布</a><a class="active" href="/chenxi2333/archives/">归档</a></nav></div><div class="post-list archives"><article class="" id="archive"><div class='archive-header h4'>2025</div><div class="archive-list"><a class='post fs14' href="/chenxi2333/2025/06/04/My-First-Blog/"><time>06-04</time><span>计算机网络基础</span></a></div></article><article class="" id="archive"><div class='archive-header h4'>2023</div><div class="archive-list"><a class='post fs14' href="/chenxi2333/2023/05/29/hello-world/"><time>05-29</time><span>Hello World</span></a></div></article></div>
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/chenxi2333/chenxi2333/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/chenxi2333/">文章</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-06-04T03:44:33.000Z">2025-06-04</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-06-04T03:45:21.254Z">2025-06-04</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>计算机网络基础</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><ul>
+<li>计算机网络是一个分层的结构，下层的协议和上层协议之间有严格的抽象解耦，下层的传输不会影响到上层。每一层只需要考虑这一层的协议实现就可以。这就是OSI网络分层结构。</li>
+<li>从下而上网络有物理层、数据链路层、网络层、传输层。本文主要解析和理解数据链路层、网络层和传输层这三层的内容的。</li>
+<li>参考文章： <a target="_blank" rel="noopener" href="https://blog.csdn.net/crazymakercircle/article/details/114527369">TCP协议详解 (史上最全)-CSDN博客</a></li>
+</ul>
+<h1 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h1><ul>
+<li>？ 链路层是什么<ul>
+<li>主要负责的是网络点对点的传输。</li>
+<li>具体来说就是如何实现局域网内的网络数据发送。</li>
+<li>![[链路层结构]]</li>
+</ul>
+</li>
+<li>？ 数据如何实现端到端的转发<ul>
+<li>MAC地址是这一层的核心协议。</li>
+<li>每个硬件设备有一个MAC地址。这个MAC设备是固定且唯一的。</li>
+<li>交换机的职责很简单，就是把MAC地址和端口进行对应。哪一个IO对应哪一个端口。<ul>
+<li>这个是一个自学习的过程，第一次发送是广播的，找到对应的配置表之后就会记录下来对应关系并且变成点对点的传输。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><ul>
+<li>？ 网络层是做什么的？<ul>
+<li>再不同的子网之间进行传输。如图所示</li>
+<li>![[网络层结构]]</li>
+<li>交换机的配置表是有限的，如果需要和外部网络的链接，依靠配置表和端口的对应关系是不够的。</li>
+<li>因此加入了路由器这一个概念。</li>
+</ul>
+</li>
+<li>？ 路由器是什么？<ul>
+<li>路由器也可以看作是一个网络设备。具有自己的MAC地址，它的作用就是转发消息。</li>
+<li>电脑A传给电脑1的消息，通过交换机1传给路由器，再由路由器传给交换机2，交换机2传给电脑1。</li>
+</ul>
+</li>
+<li>？ 电脑A怎么知道电脑1需要转发？<ul>
+<li>根据IP地址。IP地址&amp;子网掩码相同的表明在同一个子网下面，否则会将消息直接丢给路由器转发。</li>
+<li>IP协议就是网络层地核心。</li>
+<li>？ IP地址意义是什么？<ul>
+<li>IP地址是子网的编号。如果说MAC地址是身份证，那么IP地址就像是家庭住址。</li>
+<li>IP地址封装在MAC地址外侧，是网络层协议的主要部分。</li>
+<li>有了IP地址后，消息的收发不再需要知道设备的MAC号了。</li>
+</ul>
+</li>
+<li>路由器接收到消息之后，会根据内部存储的IP地址表把指向自己的MAC改为设备的MAC。如果自己的网段内没有这个MAC，路由器会进行下一级的转发。</li>
+</ul>
+</li>
+<li>？ 消息是如何在两个不同子网之间传递的？<ul>
+<li>消息会封装中包含IP地址，终端需要对方的IP地址，交给交换机之后，交换机首先判断这个IP是否属于自己的网段，如果不是就丢给路由器。</li>
+<li>如果IP地址同网段，就会查询交换机内部的IP-MAC对应表格（ARP表格），再根据MAC-端口对应表格将消息转发出去。</li>
+<li>IP和MAC的对应表也是通过学习机制学习的，再电脑、交换机、路由器上都会有MAC-IP的对应表格。</li>
+<li>路由器接收到消息之后会解析IP地址，根据IP地址转发给特定的终端，至此，通讯完成。</li>
+</ul>
+</li>
+</ul>
+<h1 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h1><ul>
+<li>？ 传输层的目的是什么？<ul>
+<li>应用之间的通讯：设备和设备之间的通讯是不够的，很多时候需要电脑A上的某个应用和另一个应用进行通讯。于是需要再IP之前增加一个端口地址，对应进程的网络访问请求。——这就产生了UDP协议</li>
+<li>传输层的另一个目的就是保证传输的可靠性：使用的思路是超时重发+回应消息——这用的就是TCP协议。</li>
+</ul>
+</li>
+<li>？ UDP协议是什么？<ul>
+<li>该协议是面向事务的，不保证传递和重复保护。需要有序、可靠地传输数据流的应用程序应使用传输控制协议 (TCP)。</li>
+</ul>
+</li>
+<li>？ 什么是TCP协议<ul>
+<li>每发送一条协议后接收端如果接收到就选哦发挥一个ACK消息，通过这样的方式保证消息的可靠性。如果没有收到就会重发地机制，就是TCP机制地核心。</li>
+<li>但是这样额方式存在的问题就是——双方的收发能力、网络的延迟、数据的先后顺序。<ul>
+<li>数据编号，依次发送并等待回应。</li>
+<li>滑动窗口：通过一个滑动窗口，来控制发送的速率。<ul>
+<li>简单来说就是保证对方最多处理N（窗口长度）个数据包，等待接收到它的回应之后才会继续发送。窗</li>
+</ul>
+</li>
+<li>窗口的长度收到路线拥塞情况和接收端的接受处理速度的影响可以不断地变化。</li>
+</ul>
+</li>
+<li>三次握手协议：<ul>
+<li>握手的意义是：确认对方能够且愿意和自己”对话“。</li>
+<li>场景模拟：<ul>
+<li>“你能听到吗？”(SYN)</li>
+<li>“OK，你呢？”(SYN+ACK)</li>
+<li>“OK，可以的”(ACK)</li>
+<li>——这就是三次握手，简单粗暴，保证了两边都能收到对方的消息。完成握手之后双方可以正式开始传输数据</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>四次挥手协议：<ul>
+<li>意义：确认对方话已经说完，并且可以结束”对话“了。</li>
+<li>场景模拟：<ul>
+<li>主动断开方：”我没什么要说的了，你呢“(FIN)</li>
+<li>被动断开方：”我把话说完“(ACK)</li>
+<li>（此时可以被动断开方再传输一些数据）</li>
+<li>被动断开方：”OK了，我也说完了，可以挂了。“（FIN+ACK）</li>
+<li>主动断开方：”挂了。“(ACK)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>？ 传输层的内容<ul>
+<li>头文件包括了20字节（20*8bits）。</li>
+<li>2+2：的源端口和目的端口号</li>
+<li>4：序号</li>
+<li>4：确认序号</li>
+<li>2：头部长度（4bits）+预留（6bits）+控制标志（6）</li>
+<li>2：窗口大小</li>
+<li>2：校验和</li>
+<li>2：紧急指针</li>
+</ul>
+</li>
+</ul>
+
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    
+    <section id="share">
+      <div class="header"><span>分享文章</span></div>
+      <div class="body">
+        <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://github.com/chenxi2333/2025/06/04/My-First-Blog/" /></div>
+        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://github.com/chenxi2333/2025/06/04/My-First-Blog/&title=计算机网络基础 - 行香子-述怀&summary=
+计算机网络是一个分层的结构，下层的协议和上层协议之间有严格的抽象解耦，下层的传输不会影响到上层。每一层只需要考虑这一层的协议实现就可以。这就是OSI网络分层结构。
+从下而上网络有物理层、数据链路层、网络层、传输层。本文主要解析和理解..."><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=计算机网络基础 - 行香子-述怀&amp;body=https://github.com/chenxi2333/2025/06/04/My-First-Blog/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+        
+        <div class="qrcode" id="qrcode-wechat" style="opacity:0;height:0">
+          <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://github.com/chenxi2333/2025/06/04/My-First-Blog/"/>
+        </div>
+        
+      </div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/chenxi2333/2023/05/29/hello-world/">Hello World</a></div></section></div>
+
+
+
+
+
+
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">CX2333</a> 使用 <a href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.30.0">Stellar 1.30.0</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel blur'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82"><span class="toc-text">数据链路层</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E5%B1%82"><span class="toc-text">网络层</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BC%A0%E8%BE%93%E5%B1%82"><span class="toc-text">传输层</span></a></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
